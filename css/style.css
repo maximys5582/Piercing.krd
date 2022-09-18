@@ -534,6 +534,9 @@ body {
   .staff {
     padding: 20px 0;
   }
+  .staff__person {
+    padding-top: 40px;
+  }
   .staff__btn {
     width: 200px;
     height: 50px;
@@ -541,5 +544,9 @@ body {
     font-size: 20px;
     margin: 0 auto;
     margin-top: 40px;
+  }
+
+  .map {
+    padding-top: 30px;
   }
 }
