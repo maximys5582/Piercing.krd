@@ -109,7 +109,7 @@ body {
   display: flex;
 }
 .header__image {
-  background: url('/img/image_1.jpg') no-repeat center top;
+  background: url('../img/image_1.jpg') no-repeat center top;
   background-size: cover;
   height: 100%;
   padding: 40px 0 250px 0;
