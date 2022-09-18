@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
     <title>Piercing.krd</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header">
+            <header class="header" id="header">
                 <div class="header__image">
                     <div class="container">
                         <div class="header__row">
@@ -22,10 +23,10 @@
                                     <div class="street">г.Краснодар, ул.Чапаева 69</div>
                                 </div>
                                 <div class="header__item">
-                                    <a href="" class="items">О нас</a>
-                                    <a href="" class="items">Галерея</a>
-                                    <a href="" class="items">Наши мастера</a>
-                                    <a href="" class="items">Контакты</a> 
+                                    <a href="#aboutUs" class="items">О нас</a>
+                                    <a href="#gallary" class="items">Галерея</a>
+                                    <a href="#staff" class="items">Наши мастера</a>
+                                    <a href="#map" class="items">Контакты</a> 
                                 </div>
                             </div>
                             <a href="https://vk.com/piercing_tattoo_krd" class="header__btn">Записаться</a>
@@ -34,7 +35,7 @@
                 </div>
             </header>
 
-            <div class="aboutUs">
+            <div class="aboutUs" id="aboutUs">
                 <div class="container">
                     <div class="aboutUs__row">
                         <div class="aboutUs__text">
@@ -51,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="gallary">
+            <div class="gallary" id="gallary">
                 <div class="container">
                     <div class="slider">
                         <a class="prev" onclick="minusSlide()">&#10094;</a>
@@ -82,7 +83,7 @@
             </div>
 
 
-            <div class="record">
+            <div class="record" id="record">
                 <div class="record__recording">
                     <input type="text" required placeholder="Введите дату">
                     <span class="highlight"></span>
@@ -97,7 +98,7 @@
                 </table>
             </div>
 
-            <div class="staff">
+            <div class="staff" id="staff">
                 <div class="container">
                     <div class="staff__title">Наши мастера</div>
                     <div class="staff__row">
@@ -109,7 +110,7 @@
                         </div>
                         <div class="staff__person">
                             <div class="staff__img">
-                                <p class="staff__post">Мастер по пирсингу</p>
+                                <p class="staff__post">пирсинг</p>
                                 <img src="img/firstStaffjpg.jpg" alt="фото мастера по пирсингу">
                                 <div class="staff__network">
                                     <!-- <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fpiercing.krd%3Figshid%3DNmNmNjAwNzg%3D&cc_key="><img src="img/icon/inst.png" alt="Инстаграм" class="network__icon"></a> -->
@@ -122,9 +123,9 @@
                 </div>
             </div>
 
-            <div class="map">
+            <div class="map" id="map">
                 <div class="container">
-                    <div class="map__piercing" ><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_chapayeva_69/Z0EYfwFoTkQOQFpvfXxycXlkZg==/?from=api-maps&ll=38.968719%2C45.030572&origin=jsapi21&utm_medium=mapframe&utm_source=maps&z=17.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Чапаева, 69 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVJUQKHA" width="1100" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div class="map__piercing" ><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_chapayeva_69/Z0EYfwFoTkQOQFpvfXxycXlkZg==/?from=api-maps&ll=38.968719%2C45.030572&origin=jsapi21&utm_medium=mapframe&utm_source=maps&z=17.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Чапаева, 69 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVJUQKHA"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </div>
             </div>
 
@@ -144,8 +145,15 @@
                 </div>
             </footer>
         </div>
+
+        <!-- sroll top -->
+        <div class="sroll__top isShowBtn_hide">
+            <a href="" class="back-to-top"><img src="img/icon/arrow_up.png" alt=""></a>
+        </div>
+
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/smooth_scrolling.js"></script>
 </body>
 </html>
