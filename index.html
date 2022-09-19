@@ -4,175 +4,507 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
-    <title>Piercing.krd</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>HZC</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <header class="header" id="header">
-                <div class="header__image">
-                    <div class="container">
-                        <div class="header__row">
-                            <div class="header__menu">
-                                <div class="header__adress">
-                                    <div class="number">+7 (996) 410-41-73</div>
-                                    <div class="street">г.Краснодар, ул.Чапаева 69</div>
-                                </div>
-                                <div class="header__item">
-                                    <a href="#aboutUs" class="items">О нас</a>
-                                    <a href="#gallary" class="items">Галерея</a>
-                                    <a href="#staff" class="items">Наши мастера</a>
-                                    <a href="#map" class="items">Контакты</a> 
-                                </div>
-                            </div>
-                            <a href="https://vk.com/piercing_tattoo_krd" class="header__btn">Записаться</a>
-                        </div>
+    <div class="menu">
+        <div class="Menu-lateral">
+            <img src="img/Group.svg" alt="logo" class="logo">
+            <div class="menu-element">
+                
+                <a href="#" class="menu-active"><img src="img/Vector.png" alt="" class="menu-icon"> Home</a>
+            </div>
+
+            <div class="menu-element">
+                
+                <a href="#" class="menu-inactive"><img src="img/Vector (1).png" alt="" class="menu-icon"> Video</a>
+            </div>
+
+            <div class="menu-element">
+                <a href="#" class="menu-inactive">
+                    <img src="img/pin-drop.png" alt="" class="menu-icon"> Maps</a>
+            </div>
+
+            <div class="menu-element">
+                
+                <a href="#" class="menu-inactive"><img src="img/Vector (2).png" alt="" class="menu-icon"> Integrantes</a>
+            </div>
+
+            <div class="menu-element">
+                
+                <a href="#" class="menu-inactive"><img src="img/accessibility.png" alt="" class="menu-icon"> Camisas</a>
+            </div>
+
+            <div class="menu-element">
+                
+                <a href="#" class="menu-inactive"><img src="img/Vector (3).png" alt="" class="menu-icon"> Arts</a>
+            </div>
+        </div>
+        
+        <div class="column">
+            <header>
+                <div class="Menu_topo">
+                    <div class="user">
+                        <img src="img/Ellipse 1.png" alt="" class="avatar">
+                        <a href="#" class="nickName"> Juniorx</a>
+                            <img src="img/Rectangle 99.png" alt="">
+                        <a href="#" class="bell"><img src="img/Group 12.png" alt=""></a>
                     </div>
                 </div>
             </header>
-
-            <div class="aboutUs" id="aboutUs">
-                <div class="container">
-                    <div class="aboutUs__row">
-                        <div class="aboutUs__text">
-                            Наша студия "название" работает с "год" и тд.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Ex, minima reprehenderit nisi ratione officiis perspiciatis. 
-                            Ipsa obcaecati cum nemo necessitatibus libero? Exercitationem deleniti 
-                            iste facere earum iusto dolore architecto iure!
-                        </div>
-                        <div class="aboutUs__image">
-                            <img src="img/image_2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallary" id="gallary">
-                <div class="container">
-                    <div class="slider">
-                        <a class="prev" onclick="minusSlide()">&#10094;</a>
-                        <div class="item">
-                            <img src="img/works/LsnI_dlgzG8.jpg" alt="Первый слайд">
-                            <div class="slideText"></div>
-                        </div>
-                    
-                        <div class="item">
-                            <img src="img/works/icyKpBbJW9g.jpg" alt="Второй слайд">
-                            <div class="slideText"></div>
-                        </div>
-                    
-                        <div class="item">
-                            <img src="img/works/k6g5apUdEuk.jpg" alt="Третий слайд">
-                            <div class="slideText"></div>
-                        </div>
-
-                        <div class="item">
-                            <img src="img/works/ZcvKD8q9ocI.jpg" alt="Второй слайд">
-                            <div class="slideText"></div>
-                        </div>
-
-                        <div class="item">
-                            <img src="img/works/hLoOJs0nSb0.jpg" alt="Второй слайд">
-                            <div class="slideText"></div>
-                        </div>
-
-                        <div class="item">
-                            <img src="img/works/oG7xxG-VJms.jpg" alt="Второй слайд">
-                            <div class="slideText"></div>
-                        </div>
-                        
-                    
-                        <a class="next" onclick="plusSlide()">&#10095;</a>
-                    </div>
-                    
-                    <div class="slider-dots">
-                        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(4)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(5)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(6)"></span> 
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="record" id="record">
-                <div class="record__recording">
-                    <input type="text" required placeholder="Введите дату">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                </div>
-                <table class="table">
-                    <div class="container">
-                        <tr><th>Дата</th><th>Вермя</th><th>Процедура</th></tr>
-                        <tr><td>Ячейка 2x1 </td><td>Ячейка 2x2 </td><td>Ячейка 2x3 </td></tr>
-                        <tr><td>Ячейка 3x1 </td><td>Ячейка 3x2 </td><td>Ячейка 3x3 </td></tr>
-                    </div>
-                </table>
-            </div>
-
-            <div class="staff" id="staff">
-                <div class="container">
-                    <div class="staff__title">Наши мастера</div>
-                    <div class="staff__row">
-                        <div class="staff__person">
-                            <div class="staff__img">
-                                <img src="img/plug.jpg" alt="">
+            
+                
+            <div class="container">
+                <section>
+                    <div class="Primeira-linha">
+                        <div class="ferst-video">
+                            <div class="art">
+                                <img src="img/Arte.jpg" alt="art">
                             </div>
-                            <a href="#" class="staff__btn">Подробнее</a>
+                            <div class="discription">
+                                <div class="discription-left">
+                                    <h4>Featured video</h4>
+                                    <h2>HZC - Life is... / 2021</h2>
+
+                                    <div class="name-person">
+                                        <img src="img/Ellipse 1.png" alt="people">
+                                        <div class="textPerson">Bruno Lopes</div>
+                                    </div>
+
+                                    <div class="views-time">
+                                        <div class="time">
+                                            <img src="img/access-time.png" alt="" class="icon">
+                                            <div class="timeText"> 33 minutes</div>
+                                        </div>
+
+                                        <div class="views">
+                                            <img src="img/remove-red-eye.png" alt="" class="icon">
+
+                                            <div class="countView">53 views</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn">
+                                    <button>
+                                        <img src="img/play-circle-outline.png" alt="" class="imgBTN">
+                                        <div class="textButton">
+                                            Watch now
+                                        </div>
+                                    </button>
+                                </div>
+
+                                
+                            </div>
+                            
                         </div>
-                        <div class="staff__person">
-                            <div class="staff__img">
-                                <p class="staff__post">пирсинг</p>
-                                <img src="img/firstStaffjpg.jpg" alt="фото мастера по пирсингу">
-                                <div class="staff__network">
-                                    <!-- <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fpiercing.krd%3Figshid%3DNmNmNjAwNzg%3D&cc_key="><img src="img/icon/inst.png" alt="Инстаграм" class="network__icon"></a> -->
-                                    <a href="https://vk.com/sugimo"><img src="img/icon/vk.png" alt="ВК" class="network__icon"></a>
+            
+                        <div class="Favoritos">
+                              <h4>Recent videos</h4>  
+                            <div class="music-block">
+                                    <img src="img/Frame 43.png" alt="">
+
+                                    <div class="music-flex">
+                                        <a href="#" class="music-title">
+                                            HZC - Love Machine
+                                        </a>
+
+                                        <div class="music-artist">
+                                            Júlia Fonseca
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Frame 44.png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        HZC - Vol. 3
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Júlia Fonseca
+                                    </div>
                                 </div>
                             </div>
-                            <a href="https://vk.com/piercing_tattoo_krd" class="staff__btn">Подробнее</a>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 45.png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        HZC - Pescaria na Urca
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Júlia Fonseca
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 46.png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Vidalocagi - Guerreiros do Asfalto
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Júlia Fonseca
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 47.png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Vidalocagi - Não importa o nível
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Júlia Fonseca
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="map" id="map">
-                <div class="container">
-                    <div class="map__piercing" ><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_chapayeva_69/Z0EYfwFoTkQOQFpvfXxycXlkZg==/?from=api-maps&ll=38.968719%2C45.030572&origin=jsapi21&utm_medium=mapframe&utm_source=maps&z=17.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Чапаева, 69 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVJUQKHA"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-                </div>
-            </div>
+                    <h3>Most viewed videos</h3>
 
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__row">
-                        <div class="footer__adress">
-                            <a class="footer__number">+7 (996) 410-41-73</a>
-                            <a class="footer__street">г.Краснодар, ул.Чапаева 69</a>
+                    
+                    <div class="slider">
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (1).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (1).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    André Soares
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    HZC - Tudo sem Padrin
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/access-time.png" alt="" class="icon">
+                                    <div class="timeText"> 33 minutes</div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="footer__links">
-                            <a href="https://vk.com/piercing_tattoo_krd" class="link">Вконтакте</a>
-                            <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fpiercing.krd%3Figshid%3DNmNmNjAwNzg%3D&cc_key=" class="link">Instagram</a>
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (2).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (2).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    André Soares
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    HZC - Tudo sem Padrin
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/access-time.png" alt="" class="icon">
+                                    <div class="timeText"> 33 minutes</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (3).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (3).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    André Soares
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    HZC - Tudo sem Padrin
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/access-time.png" alt="" class="icon">
+                                    <div class="timeText"> 33 minutes</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (4).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (2).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    André Soares
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    HZC - Tudo sem Padrin
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/access-time.png" alt="" class="icon">
+                                    <div class="timeText"> 33 minutes</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-        </div>
 
-        <!-- sroll top -->
-        <div class="sroll__top isShowBtn_hide">
-            <a href="" class="back-to-top"><img src="img/icon/arrow_up.png" alt=""></a>
-        </div>
+                    <h3>Artists</h3>
 
+                    <div class="Primeira-linha">
+                        <div class="new-artists">
+                            <h4>Recent videos</h4>  
+                            <div class="music-block">
+                                    <img src="img/Rectangle 97 (3).png" alt="">
+
+                                    <div class="music-flex">
+                                        <a href="#" class="music-title">
+                                            Sem título 01
+                                        </a>
+
+                                        <div class="music-artist">
+                                            Antonio Tebyriçá
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 97 (4).png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Sem título 02
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Antonio Tebyriçá
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 97 (5).png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Segurança
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Raphael Gibson
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 97 (6).png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Malunguisse
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Carolina Canavarro
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Frame 43 (3).png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Coroa da converse
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Nikolas de Murtas
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 97 (7).png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Segurança
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Raphael Gibson
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="music-block">
+                                <img src="img/Rectangle 97 (8).png" alt="">
+
+                                <div class="music-flex">
+                                    <a href="#" class="music-title">
+                                        Sem título 03
+                                    </a>
+
+                                    <div class="music-artist">
+                                        Antonio Tebyriçá
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="new-artist">
+                            <img src="img/Arte.png" alt="">
+                            <div class="discription">
+                                <div class="discription-left">
+                                    <h4>New art</h4>
+                                    <h2>HOnly Zikas - Lagoa Dompa Club</h2>
+
+                                    <div class="name-person">
+                                        <img src="img/Ellipse 1.png" alt="people">
+                                        <div class="textPerson">Bruno Lopes</div>
+                                    </div>
+
+                                    <div class="views-time">
+                                        <div class="time">
+                                            <img src="img/attach-money.png" alt="" class="icon">
+                                            <div class="timeText">33,33</div>
+                                        </div>
+
+                                        <div class="views">
+                                            <img src="img/remove-red-eye.png" alt="" class="icon">
+
+                                            <div class="countView">53 views</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn">
+                                    <button type="submit">
+                                            <img src="img/shopping-cart.png" alt="" class="imgBTN">
+                                            <div class="textButton">
+                                                Comprar agora
+                                            </div>
+                                    </button>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Shirts of the latter</h3>
+
+                    <div class="slider">
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (5).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (1).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    André Soares
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    IBM
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/attach-money.png" alt="" class="icon">
+                                    <div class="timeText">33,33</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (6).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (2).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    Bruno Lopes
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    Huflez Crew Philosophy Club
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/attach-money.png" alt="" class="icon">
+                                    <div class="timeText">33,33</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (7).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (3).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    Luiza Sampaio
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    Corujita noturna
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/attach-money.png" alt="" class="icon">
+                                    <div class="timeText">33,33</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person">
+                            <div class="upperImg-block">
+                                <img src="img/Rectangle 5 (8).png" alt="">
+                            </div>
+                                <img src="img/Ellipse 1 (2).png" alt="" class="elips-person">
+                            <div class="bottom-description">
+                                <div class="music-artist-slider">
+                                    Bruno Lopes
+                                </div>
+
+                                <a href="#" class="slider-Person-music">
+                                    GGG - Gatin G Gorro
+                                </a>
+
+                                <div class="time">
+                                    <img src="img/attach-money.png" alt="" class="icon">
+                                    <div class="timeText">33,33</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                <footer>
+            
+                </footer>
+            </div>
+        </div>
     </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/smooth_scrolling.js"></script>
+    
 </body>
 </html>
