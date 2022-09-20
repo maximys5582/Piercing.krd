@@ -507,6 +507,9 @@ body {
   display: flex;
 }
 
+.scroll__top a {
+  display: none;
+}
 .scroll__top img {
   position: fixed;
   bottom: 50px;
@@ -535,7 +538,7 @@ body {
     padding: 0 15px;
   }
 
-  .sroll__top img {
+  .scroll__top img {
     position: fixed;
     bottom: 30px;
     right: 30px;
