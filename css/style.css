@@ -175,6 +175,9 @@ body {
   color: #fff;
   font-size: calc(12px + 0.2083333333vw);
 }
+.header__adress a {
+  color: #fff;
+}
 .header__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,7 +404,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #fff;
   position: absolute;
-  font-size: 58px;
+  font-size: calc(50px + 0.4166666667vw);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -607,7 +610,6 @@ body {
     margin: 0 auto;
     margin-top: 40px;
   }
-
   .map {
     padding-top: 30px;
   }
