@@ -122,6 +122,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 10px;
   }
 }
+.goods {
+  padding-bottom: 100px;
+}
+.goods__main__header {
+  color: rgb(255, 143, 143);
+  text-align: center;
+  font-size: calc(15px + 0.3645833333vw);
+  padding-top: 30px;
+}
 .goods__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .goods__item {
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 70px 0 0 0;
 }
 .goods__img {
   margin: 0 auto;
@@ -635,6 +644,11 @@ body {
   font-size: 40px;
   z-index: 100;
   height: 70px;
+}
+
+.act {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1199px) {
